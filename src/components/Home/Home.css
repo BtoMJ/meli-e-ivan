@@ -1,0 +1,74 @@
+.home-container {
+  width: 100dvw;
+  /* height: 100dvh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  background-image:
+    linear-gradient(
+      180deg,
+      #fbfde850 1%,
+      rgba(255, 255, 255, 1) 50%,
+      #fbfde8 110%
+    ),
+    url(../../assets/paper-texture.png);
+
+  background-repeat: repeat;
+  background-size: 100%;
+
+  .love-phrase {
+    width: 80%;
+    font-size: 1rem;
+    color: var(--text);
+    text-align: center;
+    font-family: var(--system);
+    line-height: 18px;
+    margin: 20px 0;
+  }
+
+  .photo {
+    width: 100dvw;
+    height: 430px;
+    /* padding: 1rem; */
+    background: var(--light);
+    /* box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5); */
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .calendar-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .flower {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 300;
+      font-family: var(--cursive);
+      color: var(--text-h);
+    }
+  }
+}

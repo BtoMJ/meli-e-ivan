@@ -1,13 +1,28 @@
+import { useState } from "react";
 import Envelope from "./components/Envelope/Envelope.jsx";
-// import Envelope2 from "./components/Envelope2/Envelope2.jsx";
+import Music from "./components/Music/Music.jsx";
+import Home from "./components/Home/Home.jsx";
+import Carrusel from "./components/Carrusel/Carrusel.jsx";
+import Places from "./components/Places/Places.jsx";
 import "./index.css";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="container">
       <div className="content">
-        <Envelope />
-        {/* <Envelope2 /> */}
+        <Envelope onActive={() => setIsOpen(true)} />
+        {isOpen ? (
+          <>
+            <Music />
+            <Home />
+            <Places />
+            <Carrusel />
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

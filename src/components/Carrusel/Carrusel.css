@@ -1,0 +1,294 @@
+@media (320px <= width <= 480px) {
+  .carrusel-container {
+    width: 100%;
+
+    .carousel-fade {
+      width: 85%;
+      min-height: 500px;
+      margin: 50px 0 20px 0;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4,
+      .slide-container-5,
+      .slide-container-6,
+      .slide-container-7,
+      .slide-container-8,
+      .slide-container-9 {
+        width: 100%;
+        height: 700px;
+      }
+    }
+
+    .cita {
+      width: 80%;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .end-title {
+      width: 90%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (481px <= width <= 767px) and (orientation: landscape) {
+}
+
+@media (768px <= width <= 1023px) {
+  .carrusel-container {
+    width: 90%;
+
+    .carousel-fade {
+      width: 90%;
+      min-height: 500px;
+      margin: 50px 0 20px 0;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4 {
+        width: 90%;
+        height: 700px;
+      }
+    }
+
+    .cita {
+      width: 80%;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .end-title {
+      width: 90%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (1024px <= width <= 1199px) {
+  .carrusel-container {
+    width: 90%;
+
+    .carousel-fade {
+      width: 90%;
+      min-height: 700px;
+      margin: 20px 0;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4 {
+        width: 90%;
+        height: 700px;
+      }
+    }
+
+    .cita {
+      width: 80%;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    .end-title {
+      width: 90%;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (1200px <= width <= 1919px) {
+  .carrusel-container {
+    width: 90%;
+
+    .carousel-fade {
+      width: 90%;
+      min-height: 500px;
+      margin: 20px 0;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4 {
+        width: 90%;
+        height: 700px;
+      }
+    }
+
+    .cita {
+      width: 80%;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .end-title {
+      width: 90%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (1920px <= width <= 2660px) {
+  .carrusel-container {
+    width: 90%;
+
+    .carousel-fade {
+      width: 90%;
+      min-height: 600px;
+      margin: 50px 0 20px 0;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4 {
+        width: 90%;
+        height: 700px;
+      }
+    }
+
+    .cita {
+      width: 90%;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .end-title {
+      width: 90dvw;
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media (2661px <= width) {
+}
+
+.carrusel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image:
+    linear-gradient(
+      180deg,
+      #fbfde890 10%,
+      rgba(255, 255, 255, 1) 50%,
+      #fbfde850 100%
+    ),
+    url(../../assets/paper-texture.png);
+
+  background-repeat: repeat;
+  background-size: 100%;
+
+  .carousel-fade {
+    .slide-container-1,
+    .slide-container-2,
+    .slide-container-3,
+    .slide-container-4 {
+      background-size: cover;
+    }
+  }
+
+  .cita {
+    color: var(--text);
+    font-family: var(--system);
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .end-title {
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: var(--cursive);
+    color: var(--text-h);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.slide-container-1 {
+  background-image: url("../../assets/novios/foto-1.jpeg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-2 {
+  background-image: url("../../assets/novios/foto-2.jpeg");
+  background-position: top 5% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-3 {
+  background-image: url("../../assets/novios/foto-3.jpeg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-4 {
+  background-image: url("../../assets/novios/foto-4.jpeg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-5 {
+  background-image: url("../../assets/novios/foto-5.jpeg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-container-6 {
+  background-image: url("../../assets/novios/foto-6.jpeg");
+  background-position: top -60px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-container-7 {
+  background-image: url("../../assets/novios/foto-7.jpeg");
+  background-position: top -30px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-container-8 {
+  background-image: url("../../assets/novios/foto-8.jpeg");
+  background-position: top -30px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-container-9 {
+  background-image: url("../../assets/novios/foto-9.jpeg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-fade {
+  position: relative;
+  margin: 20px 50px 20px;
+  overflow: hidden;
+}
+
+.fade-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.fade-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
