@@ -1,6 +1,5 @@
 .places-container {
   width: 100dvw;
-  /* height: 100dvh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +8,9 @@
   background-image:
     linear-gradient(
       180deg,
-      #fbfde890 10%,
+      rgba(251, 253, 232, 0.95) 10%,
       rgba(255, 255, 255, 1) 50%,
-      #fbfde850 100%
+      rgba(251, 253, 232, 1) 100%
     ),
     url(../../assets/paper-texture.png);
 
@@ -36,48 +35,79 @@
       color: var(--text-h);
     }
   }
-}
 
-.item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
 
-  h2 {
-    font-family: var(--heading);
-    font-weight: 500;
-    color: var(--text-h);
+    h2 {
+      font-family: var(--heading);
+      font-weight: 500;
+      color: var(--text-h);
+    }
+
+    img {
+      height: 90px;
+      margin: 10px 0;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-family: var(--cursive);
+      font-weight: 300;
+      color: var(--text-h);
+    }
+
+    p {
+      font-family: var(--system);
+      font-weight: 300;
+      color: var(--text-h);
+      text-align: center;
+      width: 80%;
+      line-height: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
+      color: var(--accent-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-family: var(--system);
+    }
   }
 
-  img {
-    height: 100px;
-    margin: 10px 0;
+  .rama-left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+
+    img {
+      width: 65%;
+      position: absolute;
+      top: 150px;
+      left: -150px;
+      transform: rotate(5deg);
+    }
   }
 
-  h4 {
-    font-size: 1.5rem;
-    font-family: var(--cursive);
-    font-weight: 300;
-    color: var(--text-h);
-  }
+  .rama-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
 
-  p {
-    font-family: var(--system);
-    font-weight: 300;
-    color: var(--text-h);
-    text-align: center;
-    width: 80%;
-    line-height: 18px;
-  }
-
-  a {
-    text-decoration: none;
-    background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
-    color: var(--accent-bg);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    margin-top: 15px;
-    font-family: var(--system);
+    img {
+      width: 65%;
+      position: absolute;
+      top: 150px;
+      right: -150px;
+      transform: rotate(-5deg);
+    }
   }
 }

@@ -2,11 +2,19 @@ import church from "../../assets/itinierario/church.png";
 import reception from "../../assets/itinierario/reception.png";
 import cake from "../../assets/itinierario/cake.png";
 import flower from "../../assets/ramo.png";
+import rama3 from "../../assets/itinierario/rama3.png";
+import rama2 from "../../assets/itinierario/rama2.png";
 import "./Places.css";
 
 function Places() {
   return (
     <div className="places-container">
+      <div className="rama-left">
+        <img src={rama3} alt="rama de flores" />
+      </div>
+      <div className="rama-right">
+        <img src={rama2} alt="rama de flores" />
+      </div>
       <div className="places-header">
         <img src={flower} alt="ramo de flores" className="flower" />
         <h3>Itinerario</h3>

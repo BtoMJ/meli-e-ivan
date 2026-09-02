@@ -1,0 +1,73 @@
+.ViewLandscape-container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--bg);
+  background-image: url("../../assets/bg.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+  .flower1 {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: scaleX(-1);
+  }
+
+  .flower2 {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: -30px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: "Ephesis", cursive;
+      font-size: 7rem;
+      font-weight: bold;
+      margin-bottom: -1.9rem;
+      z-index: 3;
+      color: var(--text);
+    }
+
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-family: "Inter", sans-serif;
+      margin-left: 6.5rem;
+      margin-top: -0.1rem;
+      color: var(--text-sub);
+      z-index: 3;
+    }
+  }
+
+  h5 {
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+
+  @media (orientation: portrait) {
+    display: none;
+  }
+
+  @media (1280px <= width) {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+.confirm-container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(251, 253, 232, 0.6) 10%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(251, 253, 232, 1) 100%
+    ),
+    url(../../assets/paper-texture.png);
+
+  background-repeat: repeat;
+  background-size: 100%;
+  padding: 2rem 0 1rem 0;
+
+  .confirm-img {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    font-family: var(--cursive);
+    font-weight: 300;
+    color: var(--text-h);
+  }
+
+  p {
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--system);
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .btn-whatsapp {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-bg);
+    font-size: 1.2rem;
+    font-family: var(--system);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-top: 15px;
+    background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
+
+    .whatsapp-icon {
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import corner1 from "../../assets/novios/corner1.png";
+import corner2 from "../../assets/novios/corner2.png";
 import "./Carrusel.css";
 
 const slides = [
@@ -33,6 +35,8 @@ function Carrusel() {
 
   return (
     <div className="carrusel-container">
+      <img src={corner1} alt="ramo de flores 1" className="flower-corner-1" />
+      <img src={corner2} alt="ramo de flores 2" className="flower-corner-2" />
       <div className="carousel-fade">
         {slides.map((content, i) => (
           <div key={i} className={`fade-slide ${i === index ? "active" : ""}`}>
@@ -40,6 +44,7 @@ function Carrusel() {
           </div>
         ))}
       </div>
+
       <p className="cita">
         Cada foto guarda un momento, cada momento nos acerca al para siempre.
       </p>
