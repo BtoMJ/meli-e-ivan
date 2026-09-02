@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import flower from "../../assets/ramo.png";
 import confirm from "../../assets/confirm.png";
 import "./Confirm.css";
 
@@ -13,7 +14,12 @@ function Confirm() {
   };
   return (
     <div className="confirm-container">
-      <h2> Asistencia</h2>
+      <div className="confirm-header">
+        <img src={flower} alt="ramo de flores" className="flower" />
+        <h3>Asistencia</h3>
+        <img src={flower} alt="ramo de flores" className="flower" />
+      </div>
+
       <img className="confirm-img" src={confirm} alt="confirmar asistencia" />
 
       <p>¡Te agradecemos por acompañarnos en este día tan importante!</p>

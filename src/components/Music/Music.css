@@ -59,7 +59,6 @@
   border-radius: 100%;
   border: none;
   background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
-  /* background: #2f3e5f; */
   color: var(--accent-bg);
   position: fixed;
   right: -50px;
