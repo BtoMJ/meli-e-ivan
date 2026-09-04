@@ -254,6 +254,7 @@
 
     .number-bg {
       background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
+      /* background: linear-gradient(-45deg, #694f36 0%, #ad8d6f 90%); */
       border-radius: 100%;
       .number {
         display: flex;
@@ -261,8 +262,9 @@
         align-items: center;
         justify-content: center;
         font-family: var(--sans);
-        color: var(--accent-bg);
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        color: var(--light);
+        /* color: var(--accent-bg); */
+        /* text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
         position: relative;
         z-index: 3;
       }

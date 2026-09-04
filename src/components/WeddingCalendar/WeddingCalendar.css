@@ -156,11 +156,11 @@
   margin-top: 13px;
   background-color: transparent;
   fill: var(--principal);
-  animation: pulse 0.8s infinite alternate;
+  animation: pulseHeart 0.8s infinite alternate;
   z-index: 1;
 }
 
-@keyframes pulse {
+@keyframes pulseHeart {
   0% {
     transform: scale(1);
   }

@@ -4,9 +4,9 @@ import Music from "./components/Music/Music.jsx";
 import Home from "./components/Home/Home.jsx";
 import Carrusel from "./components/Carrusel/Carrusel.jsx";
 import Places from "./components/Places/Places.jsx";
-import "./index.css";
 import DressCode from "./components/DressCode/DressCode.jsx";
 import Confirm from "./components/Confirm/Confirm.jsx";
+import "./index.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

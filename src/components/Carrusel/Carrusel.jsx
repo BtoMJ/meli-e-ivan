@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import corner1 from "../../assets/novios/corner1.png";
 import corner2 from "../../assets/novios/corner2.png";
+import photo1 from "../../assets/novios/foto-7-corregida.jpeg";
 import "./Carrusel.css";
 
 const slides = [
@@ -38,11 +39,12 @@ function Carrusel() {
       <img src={corner1} alt="ramo de flores 1" className="flower-corner-1" />
       <img src={corner2} alt="ramo de flores 2" className="flower-corner-2" />
       <div className="carousel-fade">
-        {slides.map((content, i) => (
+        <img src={photo1} alt="foto novios" />
+        {/* {slides.map((content, i) => (
           <div key={i} className={`fade-slide ${i === index ? "active" : ""}`}>
             {content}
           </div>
-        ))}
+        ))} */}
       </div>
 
       <p className="cita">
