@@ -39,7 +39,7 @@ function Places() {
         <h2>Recepción</h2>
         <img src={reception} alt="ícono iglesia" />
         <h4>Quinta La Gaviota</h4>
-        <p>4:00 p.m.</p>
+        <p>3:00 p.m.</p>
         <a
           href="https://maps.app.goo.gl/fr6iX1gEehH84frJ8"
           target="_blank"
@@ -50,10 +50,10 @@ function Places() {
       </div>
 
       <div className="item">
-        <h2>Cena</h2>
+        <h2>Comida</h2>
         <img src={cake} alt="ícono iglesia" />
         <h4>Quinta La Gaviota</h4>
-        <p>7:00 p.m.</p>
+        <p>5:00 p.m.</p>
       </div>
     </div>
   );

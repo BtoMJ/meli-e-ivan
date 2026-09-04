@@ -1,6 +1,5 @@
 .home-container {
-  width: 100dvw;
-  /* height: 100dvh; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,27 +18,106 @@
   background-size: 100%;
 
   .love-phrase {
-    width: 80%;
-    font-size: 1rem;
     color: var(--text);
     text-align: center;
     font-family: var(--system);
-    line-height: 18px;
-    margin: 20px 0;
+    margin-top: 3rem;
+
+    @media (320px <= width <= 479px) {
+      width: 80%;
+      font-size: 1rem;
+      line-height: 18px;
+      margin-bottom: 1rem;
+    }
+
+    @media (768px <= width <= 1023px) and (min-height: 1025px) {
+      width: 80%;
+      font-size: 1.2rem;
+      line-height: 22px;
+      margin-bottom: 1rem;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      width: 70%;
+      font-size: 1.3rem;
+      line-height: 22px;
+      margin-bottom: 2rem;
+    }
+
+    @media (1280px <= width <= 1439px) {
+      width: 70%;
+      font-size: 1.1rem;
+      line-height: 22px;
+      margin-bottom: 1rem;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      width: 70%;
+      font-size: 1.1rem;
+      line-height: 22px;
+      margin-bottom: 2rem;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      width: 70%;
+      font-size: 1.5rem;
+      line-height: 27px;
+      margin-bottom: 1rem;
+    }
+
+    @media (2601px <= width) {
+      width: 70%;
+      font-size: 2rem;
+      line-height: 40px;
+      margin-bottom: 5rem;
+    }
   }
 
   .photo {
-    width: 100dvw;
-    height: 430px;
-    /* padding: 1rem; */
-    background: var(--light);
-    /* box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5); */
-    overflow: hidden;
-    margin-bottom: 20px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: var(--light);
+
+    @media (320px <= width <= 479px) and (max-height: 667px) {
+      height: 450px;
+    }
+
+    @media (320px <= width <= 479px) and (min-height: 668px) {
+      height: 33rem;
+    }
+
+    @media (768px <= width <= 1023px) and (max-height: 1024px) {
+      height: 35rem;
+    }
+
+    @media (768px <= width <= 1023px) and (min-height: 1025px) {
+      height: 38rem;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      height: 47rem;
+    }
+
+    @media (1280px <= width <= 1439px) {
+      height: 29rem;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      height: 33rem;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      height: 43rem;
+    }
+
+    @media (2601px <= width) {
+      height: 72rem;
+    }
 
     img {
       height: 100%;
@@ -51,7 +129,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 
     .calendar-header {
       display: flex;
@@ -59,16 +137,75 @@
       gap: 10px;
 
       .flower {
-        width: 50px;
-        height: 50px;
+        @media (320px <= width <= 479px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (768px <= width <= 1023px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (1024px <= width <= 1279px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media (1280px <= width <= 1439px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (1440px <= width <= 1919px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media (1920px <= width <= 2600px) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media (2601px <= width) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
 
     h3 {
-      font-size: 2.2rem;
       font-weight: 300;
       font-family: var(--cursive);
       color: var(--text-h);
+
+      @media (320px <= width <= 479px) {
+        font-size: 2.2rem;
+      }
+
+      @media (768px <= width <= 1023px) {
+        font-size: 2.2rem;
+      }
+
+      @media (1024px <= width <= 1279px) {
+        font-size: 3rem;
+      }
+
+      @media (1280px <= width <= 1439px) {
+        font-size: 2rem;
+      }
+
+      @media (1440px <= width <= 1919px) {
+        font-size: 2rem;
+      }
+
+      @media (1920px <= width <= 2600px) {
+        font-size: 2.3rem;
+      }
+
+      @media (2601px <= width) {
+        font-size: 4.5rem;
+      }
     }
   }
 }
