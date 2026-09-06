@@ -1,5 +1,5 @@
 .places-container {
-  width: 100dvw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
