@@ -11,6 +11,7 @@ function DressCode() {
         <img src={dress} alt="ícono vestimenta" />
         <h4>Asiste con ropa formal</h4>
       </div>
+
       <div className="dress-item">
         <h2>Mesa de Regalos</h2>
         <img src={gifts} alt="ícono vestimenta" />

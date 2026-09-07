@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   background-image:
     linear-gradient(
       180deg,
@@ -22,47 +23,247 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
-  }
 
-  h2 {
-    font-size: 2.2rem;
-    font-family: var(--cursive);
-    font-weight: 300;
-    color: var(--text-h);
-  }
+    @media (320px <= width <= 479px) and (max-height: 667px) {
+      margin-bottom: 1rem;
+    }
 
-  img {
-    height: 90px;
-    margin: 10px 0;
-  }
+    @media (320px <= width <= 479px) and (min-height: 896px) {
+      margin-bottom: 2rem;
+    }
 
-  p,
-  h4 {
-    width: 80%;
-    text-align: center;
-    font-size: 1rem;
-    font-family: var(--system);
-    color: var(--text);
-    font-weight: 400;
-  }
+    @media (768px <= width <= 1023px) {
+      margin-bottom: 2rem;
+    }
 
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-bg);
-    font-size: 1.2rem;
-    font-family: var(--system);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    margin-top: 15px;
-    background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
-    margin-bottom: 15px;
+    @media (1024px <= width <= 1279px) {
+      margin-bottom: 3rem;
+    }
 
-    .icon {
-      margin-right: 10px;
+    @media (1280px <= width <= 1439px) {
+      margin-bottom: 1rem;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      margin-bottom: 2rem;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      margin-bottom: 2rem;
+    }
+
+    @media (2601px <= width) {
+      margin-bottom: 5rem;
+    }
+
+    h2 {
+      font-family: var(--cursive);
+      font-weight: 300;
+      color: var(--text-h);
+
+      @media (320px <= width <= 479px) and (max-height: 667px) {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (320px <= width <= 479px) and (min-height: 896px) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (768px <= width <= 1023px) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (1024px <= width <= 1279px) {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (1280px <= width <= 1439px) {
+        font-size: 2.3rem;
+      }
+
+      @media (1440px <= width <= 1919px) {
+        font-size: 2.5rem;
+      }
+
+      @media (1920px <= width <= 2600px) {
+        font-size: 2.7rem;
+      }
+
+      @media (2601px <= width) {
+        font-size: 4.7rem;
+      }
+    }
+
+    img {
+      @media (320px <= width <= 479px) and (max-height: 667px) {
+        height: 90px;
+      }
+
+      @media (320px <= width <= 479px) and (min-height: 668px) {
+        height: 110px;
+        margin: 10px 0;
+      }
+
+      @media (768px <= width <= 1023px) {
+        height: 110px;
+        margin: 10px 0;
+      }
+
+      @media (1024px <= width <= 1279px) {
+        height: 150px;
+        margin: 20px 0;
+      }
+
+      @media (1280px <= width <= 1439px) {
+        height: 90px;
+      }
+
+      @media (1440px <= width <= 1919px) {
+        height: 120px;
+        margin: 20px 0;
+      }
+
+      @media (1920px <= width <= 2600px) {
+        height: 120px;
+        margin: 10px 0;
+      }
+
+      @media (2601px <= width) {
+        height: 230px;
+        margin: 20px 0;
+      }
+    }
+
+    p,
+    h4 {
+      text-align: center;
+      font-family: var(--system);
+      color: var(--text);
+      font-weight: 400;
+
+      @media (320px <= width <= 479px) and (max-height: 667px) {
+        width: 80%;
+        font-size: 1rem;
+        margin: 0.7rem 0;
+      }
+
+      @media (320px <= width <= 479px) and (min-height: 668px) {
+        width: 80%;
+        font-size: 1rem;
+        margin: 1rem 0;
+      }
+
+      @media (768px <= width <= 1023px) {
+        width: 70%;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      @media (1024px <= width <= 1279px) {
+        width: 70%;
+        font-size: 1.5rem;
+        line-height: 40px;
+        margin: 1.5rem 0;
+      }
+
+      @media (1280px <= width <= 1439px) {
+        width: 80%;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+      }
+
+      @media (1440px <= width <= 1919px) {
+        width: 80%;
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+      }
+
+      @media (1920px <= width <= 2600px) {
+        width: 80%;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      @media (2601px <= width) {
+        width: 70%;
+        font-size: 2.2rem;
+        line-height: 50px;
+        margin: 5rem 0;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-bg);
+      font-family: var(--system);
+      text-decoration: none;
+      border-radius: 50px;
+      background: linear-gradient(-45deg, #a9b679 0%, #666f44 90%);
+
+      @media (320px <= width <= 479px) and (max-height: 667px) {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (320px <= width <= 479px) and (min-height: 668px) {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (768px <= width <= 1023px) {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (1024px <= width <= 1279px) {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 1rem 2rem;
+      }
+
+      @media (1280px <= width <= 1439px) {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (1440px <= width <= 1919px) {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (1920px <= width <= 2600px) {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0.5rem 1rem;
+      }
+
+      @media (2601px <= width) {
+        font-size: 2.5rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 1rem 3rem;
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
     }
   }
 }
