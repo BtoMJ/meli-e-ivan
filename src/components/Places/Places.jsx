@@ -15,6 +15,7 @@ function Places() {
       <div className="rama-right">
         <img src={rama2} alt="rama de flores" />
       </div>
+
       <div className="places-header">
         <img src={flower} alt="ramo de flores" className="flower" />
         <h3>Itinerario</h3>
