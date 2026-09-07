@@ -24,10 +24,12 @@ function Confirm() {
 
       <p>¡Te agradecemos por acompañarnos en este día tan importante!</p>
       <br />
+
       <p>Favor de confirmar tu asistencia antes del evento.</p>
       <br />
+
       <p>¡Gracias por ser parte de nuestra historia!</p>
-      <div className="pase"></div>
+
       <button className="btn-whatsapp" onClick={sendToWhatsapp}>
         <FaWhatsapp className="whatsapp-icon" /> Confirmar
       </button>
