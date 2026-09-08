@@ -60,8 +60,9 @@
       font-family: var(--cursive);
       font-weight: 300;
       color: var(--text-h);
+      opacity: 0;
 
-      animation: fade linear;
+      animation: fade linear forwards;
       animation-timeline: view();
       animation-range-start: cover;
       animation-range: entry 0% cover 60%;
@@ -104,6 +105,8 @@
     }
 
     img {
+      opacity: 0;
+
       animation: fade-up linear forwards;
       animation-timeline: view();
       animation-range-start: contain;
@@ -154,6 +157,7 @@
       font-family: var(--system);
       color: var(--text);
       font-weight: 400;
+      opacity: 0;
 
       animation: fade linear forwards;
       animation-timeline: view();

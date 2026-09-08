@@ -87,6 +87,8 @@ h2 {
 }
 
 a {
+  opacity: 0;
+
   animation: fade-up linear forwards;
   animation-timeline: view();
   animation-range-start: contain;

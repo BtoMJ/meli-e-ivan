@@ -2,8 +2,9 @@
   padding: 20px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
 
-  animation: fade linear;
+  animation: fade linear forwards;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range: entry 0% cover 50%;

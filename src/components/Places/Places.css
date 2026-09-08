@@ -25,6 +25,8 @@
 
     .flower-left,
     .flower-right {
+      opacity: 0;
+
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 50px;
         height: 50px;
@@ -67,13 +69,13 @@
     }
 
     .flower-left {
-      animation: slideInLeft linear both;
+      animation: slideInLeft linear forwards;
       animation-timeline: view();
       animation-range: entry 0% cover 30%;
     }
 
     .flower-right {
-      animation: slideInRight linear both;
+      animation: slideInRight linear forwards;
       animation-timeline: view();
       animation-range: entry 0% cover 30%;
     }
@@ -82,8 +84,9 @@
       font-weight: 300;
       font-family: var(--cursive);
       color: var(--text-h);
+      opacity: 0;
 
-      animation: fade linear;
+      animation: fade linear forwards;
       animation-timeline: view();
       animation-range-start: cover;
       animation-range: entry 0% cover 50%;
@@ -133,6 +136,7 @@
       font-weight: 500;
       color: var(--text-h);
       margin: 1rem 0;
+      opacity: 0;
 
       animation: fade linear forwards;
       animation-timeline: view();
@@ -173,7 +177,9 @@
     }
 
     img {
-      animation: fade-up-in linear;
+      opacity: 0;
+
+      animation: fade-up-in linear forwards;
       animation-timeline: view();
       animation-range-start: contain;
       animation-range: entry 0% cover 30%;
@@ -223,6 +229,7 @@
       font-family: var(--cursive);
       font-weight: 300;
       color: var(--text-h);
+      opacity: 0;
 
       animation: fade linear forwards;
       animation-timeline: view();
@@ -267,6 +274,7 @@
       font-weight: 300;
       color: var(--text-h);
       text-align: center;
+      opacity: 0;
 
       animation: fade linear forwards;
       animation-timeline: view();
@@ -390,8 +398,9 @@
 
     img {
       position: absolute;
+      opacity: 0;
 
-      animation: slideInLeft linear both;
+      animation: slideInLeft linear forwards;
       animation-timeline: view();
       animation-range: entry 0% cover 50%;
 
@@ -459,8 +468,9 @@
 
     img {
       position: absolute;
+      opacity: 0;
 
-      animation: slideInRight linear both;
+      animation: slideInRight linear forwards;
       animation-timeline: view();
       animation-range: entry 0% cover 50%;
 

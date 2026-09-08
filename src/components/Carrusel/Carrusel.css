@@ -23,8 +23,9 @@
     outline: 2px solid var(--text-h);
     outline-offset: 8px;
     margin-bottom: 50px;
+    opacity: 0;
 
-    animation: fade linear;
+    animation: fade linear forwards;
     animation-timeline: view();
     animation-range-start: cover;
     animation-range: entry 0% cover 50%;
@@ -340,8 +341,9 @@
     font-family: var(--cursive);
     color: var(--text-h);
     text-align: center;
+    opacity: 0;
 
-    animation: fade linear;
+    animation: fade linear forwards;
     animation-timeline: view();
     animation-range-start: cover;
     animation-range: entry 0% cover 10%;
