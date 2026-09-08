@@ -45,7 +45,7 @@
   }
 
   @media (1920px <= width <= 2600px) {
-    height: 85dvh;
+    height: 100dvh;
   }
 
   @media (2601px <= width) {
