@@ -7,7 +7,7 @@ function Confirm() {
   const sendToWhatsapp = () => {
     const message = "Confirmo asistencia al evento";
 
-    const phone = "5214761037311";
+    const phone = "5214771329410";
 
     const urlWhatsApp = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(urlWhatsApp, "_blank");
