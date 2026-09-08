@@ -17,15 +17,15 @@
   padding: 2rem 0 1rem 0;
 
   @media (320px <= width <= 479px) and (max-height: 667px) {
-    height: 100dvh;
+    height: 100svh;
   }
 
   @media (320px <= width <= 479px) and (min-height: 668px) and (max-height: 895px) {
-    height: 90dvh;
+    height: 100svh;
   }
 
   @media (320px <= width <= 479px) and (min-height: 896px) {
-    height: 85dvh;
+    height: 85svh;
   }
 
   @media (768px <= width <= 1023px) {
