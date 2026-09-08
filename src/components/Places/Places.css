@@ -23,11 +23,8 @@
     gap: 10px;
     margin-bottom: 2rem;
 
-    .flower-left {
-      animation: slideInLeft linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 30%;
-
+    .flower-left,
+    .flower-right {
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 50px;
         height: 50px;
@@ -67,58 +64,25 @@
         width: 100px;
         height: 100px;
       }
+    }
+
+    .flower-left {
+      animation: slideInLeft linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
     }
 
     .flower-right {
       animation: slideInRight linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 30%;
-
-      @media (320px <= width <= 479px) and (max-height: 667px) {
-        width: 50px;
-        height: 50px;
-      }
-
-      @media (320px <= width <= 479px) and (min-height: 668px) {
-        width: 50px;
-        height: 50px;
-      }
-
-      @media (768px <= width <= 1023px) {
-        width: 70px;
-        height: 70px;
-      }
-
-      @media (1024px <= width <= 1279px) {
-        width: 90px;
-        height: 90px;
-      }
-
-      @media (1280px <= width <= 1439px) {
-        width: 70px;
-        height: 70px;
-      }
-
-      @media (1440px <= width <= 1919px) {
-        width: 70px;
-        height: 70px;
-      }
-
-      @media (1920px <= width <= 2600px) {
-        width: 70px;
-        height: 70px;
-      }
-
-      @media (2601px <= width) {
-        width: 100px;
-        height: 100px;
-      }
     }
 
     h3 {
       font-weight: 300;
       font-family: var(--cursive);
       color: var(--text-h);
+
       animation: fade linear;
       animation-timeline: view();
       animation-range-start: cover;
@@ -170,6 +134,11 @@
       color: var(--text-h);
       margin: 1rem 0;
 
+      animation: fade linear forwards;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
+
       @media (320px <= width <= 479px) and (max-height: 667px) {
         font-size: 1.5rem;
       }
@@ -204,8 +173,14 @@
     }
 
     img {
+      animation: fade-up-in linear;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
+
       @media (320px <= width <= 479px) and (max-height: 667px) {
         height: 90px;
+        margin: 0.5rem 0;
       }
 
       @media (320px <= width <= 479px) and (min-height: 668px) {
@@ -249,6 +224,11 @@
       font-weight: 300;
       color: var(--text-h);
 
+      animation: fade linear forwards;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
+
       @media (320px <= width <= 479px) and (max-height: 667px) {
         font-size: 1.5rem;
       }
@@ -287,6 +267,11 @@
       font-weight: 300;
       color: var(--text-h);
       text-align: center;
+
+      animation: fade linear forwards;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
 
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 80%;
@@ -405,7 +390,10 @@
 
     img {
       position: absolute;
-      transform: rotate(5deg);
+
+      animation: slideInLeft linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
 
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 65%;
@@ -471,7 +459,10 @@
 
     img {
       position: absolute;
-      transform: rotate(-5deg);
+
+      animation: slideInRight linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
 
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 65%;

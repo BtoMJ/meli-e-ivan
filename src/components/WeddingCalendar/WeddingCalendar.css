@@ -3,6 +3,11 @@
   position: relative;
   overflow: hidden;
 
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range: entry 0% cover 50%;
+
   @media (320px <= width <= 479px) {
     width: 95%;
     margin-bottom: -50px;

@@ -22,13 +22,17 @@ function Confirm() {
 
       <img className="confirm-img" src={confirm} alt="confirmar asistencia" />
 
-      <p>¡Te agradecemos por acompañarnos en este día tan importante!</p>
+      <p className="parrafo-1">
+        ¡Te agradecemos por acompañarnos en este día tan importante!
+      </p>
       <br />
 
-      <p>Favor de confirmar tu asistencia antes del evento.</p>
+      <p className="parrafo-2">
+        Favor de confirmar tu asistencia antes del evento.
+      </p>
       <br />
 
-      <p>¡Gracias por ser parte de nuestra historia!</p>
+      <p className="parrafo-3">¡Gracias por ser parte de nuestra historia!</p>
 
       <button className="btn-whatsapp" onClick={sendToWhatsapp}>
         <FaWhatsapp className="whatsapp-icon" /> Confirmar

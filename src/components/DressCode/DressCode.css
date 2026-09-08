@@ -104,6 +104,11 @@
     }
 
     img {
+      animation: fade-up linear forwards;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
+
       @media (320px <= width <= 479px) and (max-height: 667px) {
         height: 90px;
       }
@@ -149,6 +154,11 @@
       font-family: var(--system);
       color: var(--text);
       font-weight: 400;
+
+      animation: fade linear forwards;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
 
       @media (320px <= width <= 479px) and (max-height: 667px) {
         width: 80%;

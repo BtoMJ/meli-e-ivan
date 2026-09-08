@@ -6,6 +6,11 @@
     margin-bottom: 10px;
 
     .number-container {
+      animation: fade-up-in linear;
+      animation-timeline: view();
+      animation-range-start: contain;
+      animation-range: entry 0% cover 30%;
+
       .number-bg {
         width: 55px;
         height: 55px;

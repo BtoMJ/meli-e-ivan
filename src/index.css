@@ -86,6 +86,13 @@ h2 {
   color: var(--text-h);
 }
 
+a {
+  animation: fade-up linear forwards;
+  animation-timeline: view();
+  animation-range-start: contain;
+  animation-range: entry 0% cover 30%;
+}
+
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -95,6 +102,20 @@ h2 {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInRightFlower {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+    transform: rotate(-5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(-5deg);
   }
 }
 
@@ -110,6 +131,20 @@ h2 {
   }
 }
 
+@keyframes slideInLeftFlower {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    transform: rotate(5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(5deg);
+  }
+}
+
 @keyframes fade-up {
   from {
     scale: 0.5;
@@ -118,6 +153,19 @@ h2 {
   to {
     scale: 1;
     opacity: 1;
+  }
+}
+
+@keyframes fade-up-in {
+  from {
+    scale: 0.5;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
