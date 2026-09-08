@@ -15,9 +15,9 @@ function Confirm() {
   return (
     <div className="confirm-container">
       <div className="confirm-header">
-        <img src={flower} alt="ramo de flores" className="flower" />
+        <img src={flower} alt="ramo de flores" className="flower-left" />
         <h3>Asistencia</h3>
-        <img src={flower} alt="ramo de flores" className="flower" />
+        <img src={flower} alt="ramo de flores" className="flower-right" />
       </div>
 
       <img className="confirm-img" src={confirm} alt="confirmar asistencia" />

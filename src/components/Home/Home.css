@@ -16,12 +16,19 @@
 
   background-repeat: repeat;
   background-size: 100%;
+  animation: aparecer linear;
+  animation-timeline: scroll(view);
+  animation-range-start: cover;
+  animation-range-end: 50px;
 
   .love-phrase {
     color: var(--text);
     text-align: center;
     font-family: var(--system);
     margin-top: 3rem;
+    animation: fade-up linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 
     @media (320px <= width <= 479px) {
       width: 80%;
@@ -83,6 +90,10 @@
     overflow: hidden;
     background: var(--light);
 
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+
     @media (320px <= width <= 479px) and (max-height: 667px) {
       height: 450px;
     }
@@ -136,7 +147,52 @@
       align-items: center;
       gap: 10px;
 
-      .flower {
+      .flower-left {
+        animation: slideInLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+
+        @media (320px <= width <= 479px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (768px <= width <= 1023px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (1024px <= width <= 1279px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media (1280px <= width <= 1439px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media (1440px <= width <= 1919px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media (1920px <= width <= 2600px) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media (2601px <= width) {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .flower-right {
+        animation: slideInRight linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+
         @media (320px <= width <= 479px) {
           width: 50px;
           height: 50px;
@@ -178,6 +234,11 @@
       font-weight: 300;
       font-family: var(--cursive);
       color: var(--text-h);
+
+      animation: fade linear;
+      animation-timeline: view();
+      animation-range-start: cover;
+      animation-range: entry 0% cover 50%;
 
       @media (320px <= width <= 479px) {
         font-size: 2.2rem;

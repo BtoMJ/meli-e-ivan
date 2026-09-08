@@ -16,9 +16,9 @@ function Home() {
       </div>
       <div className="calendar">
         <div className="calendar-header">
-          <img src={flower} alt="ramo de flores" className="flower" />
+          <img src={flower} alt="ramo de flores" className="flower-left" />
           <h3>Reserva el día</h3>
-          <img src={flower} alt="ramo de flores" className="flower" />
+          <img src={flower} alt="ramo de flores" className="flower-right" />
         </div>
         <WeddingCalendar />
       </div>

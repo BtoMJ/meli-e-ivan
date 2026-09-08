@@ -455,6 +455,9 @@
       }
 
       .title-letter {
+        opacity: 0;
+        animation: fadeIn 2s ease-in 2.5s forwards;
+
         @media (320px <= width <= 479px) {
           margin-bottom: 5px;
         }
@@ -598,6 +601,8 @@
         font-weight: 300;
         color: var(--text);
         font-family: var(--system);
+        opacity: 0;
+        animation: fadeIn 2s ease-in 3s forwards;
 
         @media (320px <= width <= 479px) {
           font-size: 1rem;
@@ -656,6 +661,8 @@
       }
 
       .date-wedding {
+        opacity: 0;
+        animation: fadeIn 2s ease-in 3.5s forwards;
         font-family: var(--alternative);
 
         @media (320px <= width <= 479px) {
@@ -864,5 +871,14 @@
     top: -69%;
     transform: scaleY(-1);
     z-index: -1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
