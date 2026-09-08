@@ -1,16 +1,18 @@
-import flores2 from "../../assets/flores2.png";
+import flowers1 from "../../assets/flores-top.png";
+import flowers2 from "../../assets/flores-bottom.png";
 import "./ViewLandscape.css";
 
 function ViewLandscape() {
   return (
     <section className="ViewLandscape-container">
-      <div className="name">
-        <img className="flower2" src={flores2} alt="flores arriba" />
-        <h1>Ashley</h1>
-        <h4>MIS XV AÑOS</h4>
-      </div>
+      <img src={flowers1} className="flower-top" />
+      <h2>
+        Meli <span>&</span> Iván
+      </h2>
+      <p>Nuestra Boda</p>
+
       <h5>Por favor rota tu dispositivo para una mejor experiencia</h5>
-      <img className="flower1" src={flores2} alt="flores arriba" />
+      <img src={flowers2} className="flower-bottom" />
     </section>
   );
 }

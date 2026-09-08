@@ -9,50 +9,47 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--bg);
-  background-image: url("../../assets/bg.png");
-  background-position: center center;
-  background-size: cover;
+  background-color: var(--bg-light);
+  background-color: var(--bg-light);
+  background-image: url(../../assets/paper-texture.png);
+  background-repeat: repeat;
+  background-size: 100%;
   overflow: hidden;
 
-  .flower1 {
-    width: 35%;
+  .flower-top {
     position: absolute;
-    top: 0;
-    left: -30px;
-    transform: scaleX(-1);
+    top: -2rem;
+    left: -1.5rem;
+    width: 12rem;
   }
 
-  .flower2 {
-    width: 35%;
+  .flower-bottom {
     position: absolute;
-    top: 0;
-    right: -30px;
+    bottom: -2rem;
+    right: -1.5rem;
+    width: 12rem;
   }
 
-  .name {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  h2 {
+    font-weight: 500;
+    font-family: var(--alternative);
+    font-size: 5rem;
 
-    h1 {
-      font-family: "Ephesis", cursive;
-      font-size: 7rem;
-      font-weight: bold;
-      margin-bottom: -1.9rem;
-      z-index: 3;
+    span {
+      font-family: var(--sans);
       color: var(--text);
+      font-weight: 500;
+      font-style: italic;
+      font-size: 2.5rem;
+      margin-left: 10px;
     }
+  }
 
-    h4 {
-      font-size: 1.3rem;
-      font-weight: 400;
-      font-family: "Inter", sans-serif;
-      margin-left: 6.5rem;
-      margin-top: -0.1rem;
-      color: var(--text-sub);
-      z-index: 3;
-    }
+  p {
+    font-family: var(--sans);
+    color: var(--text);
+    margin-top: -1rem;
+    font-size: 1.5rem;
   }
 
   h5 {
@@ -60,14 +57,9 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    font-family: "Inter", sans-serif;
-  }
-
-  @media (orientation: portrait) {
-    display: none;
-  }
-
-  @media (1280px <= width) {
-    display: none;
+    font-family: var(--system);
+    font-weight: 300;
+    color: var(--text);
+    margin-top: 2rem;
   }
 }
