@@ -7,36 +7,36 @@ import Places from "./components/Places/Places.jsx";
 import DressCode from "./components/DressCode/DressCode.jsx";
 import Confirm from "./components/Confirm/Confirm.jsx";
 
-import useOrientation from "./hooks/useOrientation.jsx";
+import useDeviceOrientation from "./hooks/useOrientation.jsx";
 
 import "./index.css";
 import ViewLandscape from "./components/ViewLandscape/ViewLandscape.jsx";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const screenOrientation = useOrientation();
+  const { isMobile, isLandscape } = useDeviceOrientation();
+
+  if (isMobile && isLandscape) {
+    return <ViewLandscape />;
+  }
 
   return (
     <div className="container">
-      {screenOrientation === "portrait" ? (
-        <div className="content">
-          <Envelope onActive={() => setIsOpen(true)} />
-          {isOpen ? (
-            <>
-              <Music />
-              <Home />
-              <Places />
-              <Carrusel />
-              <DressCode />
-              <Confirm />
-            </>
-          ) : (
-            ""
-          )}
-        </div>
-      ) : (
-        <ViewLandscape />
-      )}
+      <div className="content">
+        <Envelope onActive={() => setIsOpen(true)} />
+        {isOpen ? (
+          <>
+            <Music />
+            <Home />
+            <Places />
+            <Carrusel />
+            <DressCode />
+            <Confirm />
+          </>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }
